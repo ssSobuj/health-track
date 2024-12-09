@@ -82,7 +82,7 @@ export default function Login() {
           <Button className="" onPress={handleSubmit} title={'Login'} />
         </View>
         {/* Sign Up Options */}
-        <Text className="text-center mt-24 text-black my-6">
+        <Text className="text-center mt-20 text-black my-6">
           or sign up with
         </Text>
         <View className="flex-row justify-center space-x-4 gap-4">
@@ -103,7 +103,7 @@ export default function Login() {
         </View>
 
         {/* Sign Up Text */}
-        <View className="flex-row justify-center mt-6">
+        <View className="flex-row justify-center mt-10">
           <Text className="text-black">Don’t have an account?</Text>
           <TouchableOpacity onPress={() => navigation.navigate('Register')}>
             <Text className="text-primary font-semibold"> Sign Up</Text>
