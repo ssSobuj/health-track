@@ -30,7 +30,16 @@ const Routes = () => {
           name="Login"
           component={Login}
           options={{
-            headerShown: false,
+            headerStyle: {
+              backgroundColor: '#16f6ec', // Set background color
+            },
+            headerTintColor: '#fff', // Set text and icon color
+            headerTitleStyle: {
+              fontWeight: 'bold',
+              fontSize: 20,
+              textAlign: 'center',
+            },
+            headerTitleAlign: 'center',
           }}
         />
         <Stack.Screen

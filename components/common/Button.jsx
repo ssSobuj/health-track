@@ -3,7 +3,6 @@ import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 
 export default function Button({onClick, title}) {
-  const navigation = useNavigation();
   return (
     <TouchableOpacity
       className="bg-primary rounded-full w-[250px]"
