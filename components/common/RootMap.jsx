@@ -43,14 +43,15 @@ function RootMap() {
   return (
     <View className="flex items-center relative w-full px-16">
       {!(currentIndex == data.length - 1) && (
-        <View className="space-y-4 mt-6 absolute right-6 top-0">
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Login')}
-            className="py-4 w-full flex flex-row items-center">
-            <Text className="text-center text-lg font-semibold">Skip</Text>
-            <Icon name="arrow-forward" size={18} />
-          </TouchableOpacity>
-        </View>
+        // <View className="space-y-4 mt-6 absolute right-6 top-0">
+        <TouchableOpacity
+          style={{zIndex: 10}}
+          onPress={() => navigation.navigate('Login')}
+          className="py-4 flex flex-row items-center absolute right-6 top-0">
+          <Text className="text-center text-lg font-semibold">Skip</Text>
+          <Icon name="arrow-forward" size={18} />
+        </TouchableOpacity>
+        // </View>
       )}
       <View className="flex justify-center items-center">
         <Image

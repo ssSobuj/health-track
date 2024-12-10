@@ -23,7 +23,17 @@ const Routes = () => {
           name="Register"
           component={Register}
           options={{
-            headerShown: false,
+            headerStyle: {
+              backgroundColor: '#16f6ec', // Set background color
+            },
+            headerTitle: 'New Account',
+            headerTintColor: '#fff', // Set text and icon color
+            headerTitleStyle: {
+              fontWeight: 'bold',
+              fontSize: 20,
+              textAlign: 'center',
+            },
+            headerTitleAlign: 'center',
           }}
         />
         <Stack.Screen
